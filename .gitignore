@@ -38,10 +38,7 @@ env/
 *.swo
 *~
 
-# Logs
-logs/
-*.log
-!bot.log  # Allow bot.log to be tracked
+
 
 # Test coverage
 htmlcov/

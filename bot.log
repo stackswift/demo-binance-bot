@@ -1,0 +1,187 @@
+{"order_id": 6754193986, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 14:07:04", "event": "order_executed", "level": "info"}
+{"order_id": 6754294355, "symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "price": "110000.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 14:07:57", "event": "order_executed", "level": "info"}
+{"order_id": 6754381922, "symbol": "BTCUSDT", "side": "BUY", "type": "STOP", "price": "109550.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 14:08:42", "event": "order_executed", "level": "info"}
+{"order_id": 6754403764, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "109000.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 14:08:55", "event": "order_executed", "level": "info"}
+{"order_id": 6754404660, "symbol": "BTCUSDT", "side": "BUY", "type": "STOP", "price": "108000.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 14:08:56", "event": "order_executed", "level": "info"}
+{"order_id": 6758889784, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 14:49:17", "event": "order_executed", "level": "info"}
+{"tick_size": 0.1, "given_price": 35000.0, "remainder": 0.09999999999805712, "event": "price_validation_failed_tick_size", "level": "error", "timestamp": "2025-10-23 14:49:33"}
+{"tick_size": 0.1, "given_price": 109700.0, "remainder": 0.09999999999391043, "event": "price_validation_failed_tick_size", "level": "error", "timestamp": "2025-10-23 14:50:08"}
+{"tick_size": 0.1, "given_price": 109700.1, "remainder": 0.09999999999973119, "event": "price_validation_failed_tick_size", "level": "error", "timestamp": "2025-10-23 14:50:41"}
+{"order_id": 6759586291, "symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "price": "109663.10", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 14:55:31", "event": "order_executed", "level": "info"}
+{"error_code": -1116, "error_message": "Invalid orderType.", "parameters": {"symbol": "BTCUSDT", "side": "SELL", "type": "STOP_LIMIT", "timeInForce": "GTC", "quantity": 0.001, "price": 109700.0, "stopPrice": 109680.0}, "timestamp": "2025-10-23 15:01:22", "event": "order_failed", "level": "error"}
+{"error_code": -1116, "error_message": "Invalid orderType.", "parameters": {"symbol": "BTCUSDT", "side": "SELL", "type": "STOP_LIMIT", "timeInForce": "GTC", "quantity": 0.001, "price": 109700.0, "stopPrice": 109680.0}, "timestamp": "2025-10-23 15:01:27", "event": "order_failed", "level": "error"}
+{"error_code": -1116, "error_message": "Invalid orderType.", "parameters": {"symbol": "BTCUSDT", "side": "SELL", "type": "STOP_LIMIT", "timeInForce": "GTC", "quantity": 0.001, "price": 109700.0, "stopPrice": 109680.0}, "timestamp": "2025-10-23 15:01:31", "event": "order_failed", "level": "error"}
+{"event": "Failed to place stop-limit order: RetryError[<Future at 0x7812ee324320 state=finished raised BinanceAPIException>]", "level": "error", "timestamp": "2025-10-23 15:01:31"}
+{"error_code": -2021, "error_message": "Order would immediately trigger.", "parameters": {"symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "timeInForce": "GTC", "quantity": 0.001, "price": 109700.0, "stopPrice": 109680.0}, "timestamp": "2025-10-23 15:01:56", "event": "order_failed", "level": "error"}
+{"error_code": -2021, "error_message": "Order would immediately trigger.", "parameters": {"symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "timeInForce": "GTC", "quantity": 0.001, "price": 109700.0, "stopPrice": 109680.0}, "timestamp": "2025-10-23 15:02:00", "event": "order_failed", "level": "error"}
+{"error_code": -2021, "error_message": "Order would immediately trigger.", "parameters": {"symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "timeInForce": "GTC", "quantity": 0.001, "price": 109700.0, "stopPrice": 109680.0}, "timestamp": "2025-10-23 15:02:04", "event": "order_failed", "level": "error"}
+{"event": "Failed to place stop-limit order: RetryError[<Future at 0x73f2b11e3d10 state=finished raised BinanceAPIException>]", "level": "error", "timestamp": "2025-10-23 15:02:04"}
+{"order_id": 6760416483, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": "104055.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:02:57", "event": "order_executed", "level": "info"}
+{"order_id": 6760421176, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": "104055.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:02:59", "event": "order_executed", "level": "info"}
+{"order_id": 6760425903, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": "104055.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:03:01", "event": "order_executed", "level": "info"}
+{"order_id": 6760600534, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": "104055.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:04:33", "event": "order_executed", "level": "info"}
+{"order_id": 6760605709, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": "104055.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:04:35", "event": "order_executed", "level": "info"}
+{"order_id": 6760609870, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": "104055.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:04:37", "event": "order_executed", "level": "info"}
+{"order_id": 6760666100, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:05:08"}
+{"order_id": 6760669600, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:05:10"}
+{"order_id": 6760672279, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:05:11"}
+{"order_id": 6760746425, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:05:51"}
+{"order_id": 6760749856, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:05:53"}
+{"order_id": 6760753882, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:05:55"}
+{"order_id": 6760910207, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:07:17"}
+{"order_id": 6760913674, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:07:19"}
+{"order_id": 6760916254, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:07:20"}
+{"order_id": 6761059719, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:08:37"}
+{"order_id": 6761063557, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:08:39"}
+{"order_id": 6761066099, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:08:41"}
+{"order_id": 6761139231, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:09:18"}
+{"order_id": 6761223691, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:10:06"}
+{"order_id": 6761232402, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:10:10"}
+{"order_id": 6761237030, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:10:12"}
+{"order_id": 6761375400, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:11:26"}
+{"order_id": 6761379550, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:11:28"}
+{"order_id": 6761382772, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:11:30"}
+{"order_id": 6761800679, "symbol": "BTCUSDT", "side": "SELL", "type": "STOP", "price": 104055.7, "quantity": 0.001, "status": "NEW", "event": "order_executed", "level": "info", "timestamp": "2025-10-23 15:15:14"}
+{"order_id": 6764800207, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:41:19", "event": "order_executed", "level": "info"}
+{"order_id": 6764838161, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "109400.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:41:36", "event": "order_executed", "level": "info"}
+{"event": "Failed to place OCO order: name 'price' is not defined", "level": "error", "timestamp": "2025-10-23 15:47:06"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:48:05"}
+{"event": "Failed to place OCO order: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).", "level": "error", "timestamp": "2025-10-23 15:49:10"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:50:25"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:51:08"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:52:08"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:52:24"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:52:57"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:53:47"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:55:25"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:55:44"}
+{"order_id": 6766723950, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 15:57:48"}
+{"event": "Failed to place OCO order: APIError(code=-2021): Order would immediately trigger.", "level": "error", "timestamp": "2025-10-23 15:57:48"}
+{"order_id": 6766947174, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 15:59:45", "event": "order_executed", "level": "info"}
+{"order_id": 6767144188, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:01:32"}
+{"order_id": 6767144527, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:01:32"}
+{"event": "Failed to place OCO order: name 'stop_result' is not defined", "level": "error", "timestamp": "2025-10-23 16:01:32"}
+{"event": "Failed to place OCO order: APIError(code=-2022): ReduceOnly Order is rejected.", "level": "error", "timestamp": "2025-10-23 16:03:38"}
+{"order_id": 6767462049, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:04:09", "event": "order_executed", "level": "info"}
+{"order_id": 6767482515, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:04:21"}
+{"order_id": 6767483059, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:04:21"}
+{"event": "Failed to place OCO order: APIError(code=-2022): ReduceOnly Order is rejected.", "level": "error", "timestamp": "2025-10-23 16:04:25"}
+{"order_id": 6767587896, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:05:14"}
+{"order_id": 6767589399, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:05:15"}
+{"event": "Failed to place OCO order: APIError(code=-2022): ReduceOnly Order is rejected.", "level": "error", "timestamp": "2025-10-23 16:05:18"}
+{"order_id": 6767689305, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:06:12"}
+{"order_id": 6767689489, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:06:12"}
+{"event": "Failed to place OCO order: APIError(code=-2022): ReduceOnly Order is rejected.", "level": "error", "timestamp": "2025-10-23 16:06:15"}
+{"order_id": 6767781417, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:07:09"}
+{"order_id": 6767781739, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:07:09"}
+{"event": "Failed to place OCO order: APIError(code=-2022): ReduceOnly Order is rejected.", "level": "error", "timestamp": "2025-10-23 16:07:12"}
+{"order_id": 6767938534, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:08:36"}
+{"order_id": 6767938711, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:08:36"}
+{"order_id": 6767945073, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:08:39"}
+{"order_id": 6767945197, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:08:40"}
+{"order_id": 6768028843, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:09:23"}
+{"order_id": 6768030506, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:09:24"}
+{"order_id": 6768036051, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:09:26"}
+{"order_id": 6768036273, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:09:26"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:13:16"}
+{"order_id": 6768465606, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:13:17"}
+{"order_id": 6768465757, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:13:17"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:13:20"}
+{"order_id": 6768472370, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:13:21"}
+{"order_id": 6768472597, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:13:21"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:14:22"}
+{"order_id": 6768596444, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:14:23"}
+{"order_id": 6768596614, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:14:24"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:14:26"}
+{"order_id": 6768602953, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:14:27"}
+{"order_id": 6768603048, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:14:27"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:18:42"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:18:45"}
+{"order_id": 6769092661, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:18:45"}
+{"order_id": 6769092795, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:18:45"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:18:45"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:18:48"}
+{"order_id": 6769099389, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:18:48"}
+{"order_id": 6769099543, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:18:49"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:22:18"}
+{"order_id": 6769556032, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:22:33", "event": "order_executed", "level": "info"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:22:58"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:23:01"}
+{"symbol": "BTCUSDT", "event": "cancelled_existing_orders", "level": "info", "timestamp": "2025-10-23 16:23:01"}
+{"order_id": 6769612918, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:23:01"}
+{"order_id": 6769613114, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:23:02"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:23:02"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:23:05"}
+{"symbol": "BTCUSDT", "event": "cancelled_existing_orders", "level": "info", "timestamp": "2025-10-23 16:23:06"}
+{"order_id": 6769621216, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:23:06"}
+{"order_id": 6769621352, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:23:06"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:24:17"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:24:20"}
+{"symbol": "BTCUSDT", "event": "cancelled_existing_orders", "level": "info", "timestamp": "2025-10-23 16:24:21"}
+{"order_id": 6769768365, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:24:21"}
+{"order_id": 6769769096, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:24:21"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:24:21"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:24:24"}
+{"symbol": "BTCUSDT", "event": "cancelled_existing_orders", "level": "info", "timestamp": "2025-10-23 16:24:24"}
+{"order_id": 6769774858, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:24:24"}
+{"order_id": 6769774979, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:24:25"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:25:45"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:25:48"}
+{"symbol": "BTCUSDT", "event": "cancelled_existing_orders", "level": "info", "timestamp": "2025-10-23 16:25:48"}
+{"order_id": 6769941254, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:25:49"}
+{"order_id": 6769941826, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:25:49"}
+{"event": "Cancelling existing orders before placing new ones", "level": "info", "timestamp": "2025-10-23 16:25:49"}
+{"event": "Cancelling existing orders", "level": "info", "timestamp": "2025-10-23 16:25:52"}
+{"symbol": "BTCUSDT", "event": "cancelled_existing_orders", "level": "info", "timestamp": "2025-10-23 16:25:52"}
+{"order_id": 6769948161, "event": "take_profit_order_executed", "level": "info", "timestamp": "2025-10-23 16:25:53"}
+{"order_id": 6769948450, "event": "stop_loss_order_executed", "level": "info", "timestamp": "2025-10-23 16:25:53"}
+{"error_code": -4014, "error_message": "Price not increased by tick size.", "parameters": {"symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "timeInForce": "GTC", "quantity": 0.001, "price": 107567.45}, "timestamp": "2025-10-23 16:30:18", "event": "order_failed", "level": "error"}
+{"event": "Failed to place grid orders: APIError(code=-4014): Price not increased by tick size.", "level": "error", "timestamp": "2025-10-23 16:30:18"}
+{"error_code": -1111, "error_message": "Precision is over the maximum defined for this asset.", "parameters": {"symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "timeInForce": "GTC", "quantity": 0.001, "price": 107567.40000000001}, "timestamp": "2025-10-23 16:31:07", "event": "order_failed", "level": "error"}
+{"event": "Failed to place grid orders: APIError(code=-1111): Precision is over the maximum defined for this asset.", "level": "error", "timestamp": "2025-10-23 16:31:07"}
+{"order_id": 6770638259, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "107567.40", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:31:48", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237107", "price": 107567.4, "side": "BUY", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:31:48"}
+{"order_id": 6770638417, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "108665.10", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:31:48", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237107", "price": 108665.1, "side": "BUY", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:31:48"}
+{"order_id": 6770638586, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "109762.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:31:48", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237107", "price": 109762.7, "side": "BUY", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:31:48"}
+{"order_id": 6770638784, "symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "price": "110860.30", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:31:49", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237107", "price": 110860.3, "side": "SELL", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:31:49"}
+{"order_id": 6770639013, "symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "price": "111958.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:31:49", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237107", "price": 111958.0, "side": "SELL", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:31:49"}
+{"grid_id": "GRID_1761237107", "symbol": "BTCUSDT", "lower_price": 107567.45, "upper_price": 111957.95, "num_grids": 5, "event": "Grid trading started", "level": "info", "timestamp": "2025-10-23 16:31:49"}
+{"order_id": 6770732680, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "107567.40", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:32:37", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237156", "price": 107567.4, "side": "BUY", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:32:37"}
+{"order_id": 6770732943, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "108665.10", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:32:37", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237156", "price": 108665.1, "side": "BUY", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:32:37"}
+{"order_id": 6770733478, "symbol": "BTCUSDT", "side": "BUY", "type": "LIMIT", "price": "109762.70", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:32:37", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237156", "price": 109762.7, "side": "BUY", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:32:37"}
+{"order_id": 6770733670, "symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "price": "110860.30", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:32:37", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237156", "price": 110860.3, "side": "SELL", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:32:37"}
+{"order_id": 6770733940, "symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "price": "111958.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:32:37", "event": "order_executed", "level": "info"}
+{"grid_id": "GRID_1761237156", "price": 111958.0, "side": "SELL", "event": "Grid order placed", "level": "info", "timestamp": "2025-10-23 16:32:37"}
+{"grid_id": "GRID_1761237156", "symbol": "BTCUSDT", "lower_price": 107567.45, "upper_price": 111957.95, "num_grids": 5, "event": "Grid trading started", "level": "info", "timestamp": "2025-10-23 16:32:37"}
+{"order_id": "TWAP_1761237425", "total_quantity": 0.005, "num_chunks": 5, "interval_minutes": 1, "event": "TWAP order started", "level": "info", "timestamp": "2025-10-23 16:37:05"}
+{"order_id": 6771237130, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:37:05", "event": "order_executed", "level": "info"}
+{"chunk_number": 1, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237425", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:37:05"}
+{"order_id": 6771345452, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:38:05", "event": "order_executed", "level": "info"}
+{"chunk_number": 2, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237425", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:38:05"}
+{"order_id": 6771457826, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:39:06", "event": "order_executed", "level": "info"}
+{"chunk_number": 3, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237425", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:39:06"}
+{"order_id": 6771569330, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:40:06", "event": "order_executed", "level": "info"}
+{"chunk_number": 4, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237425", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:40:06"}
+{"order_id": 6771681299, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:41:06", "event": "order_executed", "level": "info"}
+{"chunk_number": 5, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237425", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:41:06"}
+{"order_id": "TWAP_1761237425", "event": "TWAP order completed", "level": "info", "timestamp": "2025-10-23 16:41:06"}
+{"order_id": "TWAP_1761237726", "total_quantity": 0.005, "num_chunks": 5, "interval_minutes": 1, "event": "TWAP order started", "level": "info", "timestamp": "2025-10-23 16:42:06"}
+{"order_id": 6771798921, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:42:07", "event": "order_executed", "level": "info"}
+{"chunk_number": 1, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237726", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:42:07"}
+{"order_id": 6771912012, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:43:07", "event": "order_executed", "level": "info"}
+{"chunk_number": 2, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237726", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:43:07"}
+{"order_id": 6772029667, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:44:07", "event": "order_executed", "level": "info"}
+{"chunk_number": 3, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237726", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:44:07"}
+{"order_id": 6772148202, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:45:08", "event": "order_executed", "level": "info"}
+{"chunk_number": 4, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237726", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:45:08"}
+{"order_id": 6772263751, "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "price": "0.00", "quantity": "0.001", "status": "NEW", "timestamp": "2025-10-23 16:46:08", "event": "order_executed", "level": "info"}
+{"chunk_number": 5, "total_chunks": 5, "quantity": 0.001, "order_id": "TWAP_1761237726", "event": "TWAP chunk executed", "level": "info", "timestamp": "2025-10-23 16:46:08"}
+{"order_id": "TWAP_1761237726", "event": "TWAP order completed", "level": "info", "timestamp": "2025-10-23 16:46:08"}
