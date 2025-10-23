@@ -1,6 +1,8 @@
 import sys
 import time
-from ..base_order import BaseOrder
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from src.base_order import BaseOrder
 import structlog
 from threading import Thread
 from typing import List, Dict
@@ -13,10 +15,57 @@ class GridOrder(BaseOrder):
         super().__init__()
         self.active_grids = {}  # Track active grid orders
 
-    def _calculate_grid_levels(self, lower_price: float, upper_price: float, num_grids: int) -> List[float]:
+    def _validate_symbol(self, symbol: str) -> bool:
+        """Validate if the symbol is available for trading"""
+        try:
+            self.client.futures_exchange_info()
+            return True
+        except Exception:
+            return False
+
+    def _validate_quantity(self, symbol: str, quantity: float) -> bool:
+        """Validate if the quantity meets minimum requirements"""
+        try:
+            info = self.client.futures_exchange_info()
+            symbol_info = next(s for s in info['symbols'] if s['symbol'] == symbol)
+            min_qty = float(next(f for f in symbol_info['filters'] if f['filterType'] == 'LOT_SIZE')['minQty'])
+            return quantity >= min_qty
+        except Exception:
+            return False
+
+    def _validate_price(self, symbol: str, price: float) -> bool:
+        """Validate if the price is within allowed range"""
+        try:
+            ticker = self.client.futures_symbol_ticker(symbol=symbol)
+            current_price = float(ticker['price'])
+            # Allow prices within ±10% of current price
+            return 0.9 * current_price <= price <= 1.1 * current_price
+        except Exception:
+            return False
+            
+    def get_market_price(self, symbol: str) -> float:
+        """Get current market price for a symbol"""
+        ticker = self.client.futures_symbol_ticker(symbol=symbol)
+        return float(ticker['price'])
+
+    def _format_price(self, symbol: str, price: float) -> float:
+        """Format price according to symbol tick size"""
+        info = self.client.futures_exchange_info()
+        symbol_info = next(s for s in info['symbols'] if s['symbol'] == symbol)
+        price_filter = next(f for f in symbol_info['filters'] if f['filterType'] == 'PRICE_FILTER')
+        tick_size = float(price_filter['tickSize'])
+        
+        # Calculate decimal places from tick size
+        decimal_places = len(str(tick_size).split('.')[-1])
+        
+        # Round to nearest tick size and format to correct precision
+        rounded = round(price / tick_size) * tick_size
+        return float(f"{{:.{decimal_places}f}}".format(rounded))
+
+    def _calculate_grid_levels(self, symbol: str, lower_price: float, upper_price: float, num_grids: int) -> List[float]:
         """Calculate price levels for the grid"""
         grid_size = (upper_price - lower_price) / (num_grids - 1)
-        return [lower_price + i * grid_size for i in range(num_grids)]
+        return [self._format_price(symbol, lower_price + i * grid_size) for i in range(num_grids)]
 
     def _place_grid_orders(self, symbol: str, levels: List[float], quantity: float, grid_id: str):
         """Place the initial grid orders"""
@@ -124,7 +173,7 @@ class GridOrder(BaseOrder):
             raise ValueError(f"Invalid quantity per grid: {quantity_per_grid}")
             
         # Generate grid levels
-        price_levels = self._calculate_grid_levels(lower_price, upper_price, num_grids)
+        price_levels = self._calculate_grid_levels(symbol, lower_price, upper_price, num_grids)
         
         # Validate each price level
         for price in price_levels:

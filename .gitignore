@@ -39,9 +39,9 @@ env/
 *~
 
 # Logs
-*.log
 logs/
-bot.log
+*.log
+!bot.log  # Allow bot.log to be tracked
 
 # Test coverage
 htmlcov/

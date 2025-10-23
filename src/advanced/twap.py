@@ -1,6 +1,8 @@
 import sys
 import time
-from ..base_order import BaseOrder
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from src.base_order import BaseOrder
 import structlog
 from threading import Thread
 from typing import Optional
@@ -11,6 +13,24 @@ class TWAPOrder(BaseOrder):
     def __init__(self):
         super().__init__()
         self.active_orders = {}  # Track running TWAP orders
+
+    def _validate_symbol(self, symbol: str) -> bool:
+        """Validate if the symbol is available for trading"""
+        try:
+            self.client.futures_exchange_info()
+            return True
+        except Exception:
+            return False
+
+    def _validate_quantity(self, symbol: str, quantity: float) -> bool:
+        """Validate if the quantity meets minimum requirements"""
+        try:
+            info = self.client.futures_exchange_info()
+            symbol_info = next(s for s in info['symbols'] if s['symbol'] == symbol)
+            min_qty = float(next(f for f in symbol_info['filters'] if f['filterType'] == 'LOT_SIZE')['minQty'])
+            return quantity >= min_qty
+        except Exception:
+            return False
 
     def _execute_twap_chunks(self, symbol: str, side: str, total_quantity: float,
                            num_chunks: int, interval_minutes: int,
