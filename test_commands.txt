@@ -1,0 +1,33 @@
+# Binance Bot Test Commands
+
+## 1. Market Orders
+# Open a long position with market order
+python src/market_orders.py BTCUSDT BUY 0.001
+
+## 2. OCO (One-Cancels-the-Other) Orders
+# Place OCO orders (Take Profit and Stop Loss) for a long position
+# Format: <symbol> <side> <quantity> <take_profit_price> <stop_loss_price>
+python src/advanced/oco.py BTCUSDT SELL 0.001 112059.65 108763.78
+
+## 3. Grid Trading
+# Set up grid trading with 5 levels
+# Format: <symbol> <lower_price> <upper_price> <num_grids> <quantity_per_grid>
+python src/advanced/grid.py BTCUSDT 107567.45 111957.95 5 0.001
+
+## 4. TWAP (Time-Weighted Average Price)
+# Execute TWAP order split into chunks
+# Format: <symbol> <side> <total_quantity> <num_chunks> <interval_minutes>
+python src/advanced/twap.py BTCUSDT BUY 0.005 5 1
+
+## Other Useful Commands
+# Cancel all open orders for a symbol
+python -c "from binance.client import Client; import os; client = Client(os.getenv('BINANCE_API_KEY'), os.getenv('BINANCE_API_SECRET')); client.futures_cancel_all_open_orders(symbol='BTCUSDT')"
+
+# Check position information
+python -c "from binance.client import Client; import os; client = Client(os.getenv('BINANCE_API_KEY'), os.getenv('BINANCE_API_SECRET')); print(client.futures_position_information(symbol='BTCUSDT'))"
+
+# Notes:
+# 1. Make sure you have set BINANCE_API_KEY and BINANCE_API_SECRET environment variables
+# 2. All orders use BTCUSDT futures market
+# 3. Order quantities and prices should be adjusted based on current market conditions
+# 4. Check bot.log for detailed execution information
